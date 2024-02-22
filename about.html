@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <h1>Blogster</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="header-container"></div>
+    <script src="common-header.js"></script>
+
+
+    <main>
+        <section class="about-section">
+            <div class="profile-container">
+                <img src="profile-picture.jpg" alt="Your Profile Picture">
+            </div>
+            <div class="text-container">
+                <h2>About Us</h2>
+                <p>As a web developer, I am a skilled professional dedicated to crafting, enhancing, and maintaining websites. My expertise lies in proficiently using programming 
+                    languages like HTML, CSS, and JavaScript, along with a deep understanding of various frameworks and libraries.</p>
+                <p>Follow us on social media to stay updated:</p>
+                <ul class="social-links">
+                    <li><a href="https://web.facebook.com/neildaive" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/DaiveNeil" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/neildaive/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Blog. All rights reserved.</p>
+    </footer>
+
+    document.addEventListener("DOMContentLoaded", function () {
+ 
+        fetch("header.html")
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("header-container").innerHTML = html;
+            });
+    });
+    <script src="common-header.js"></script>
+</body>
+</html>

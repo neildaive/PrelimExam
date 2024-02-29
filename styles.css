@@ -1,6 +1,7 @@
 body, h1, h2, p {
     margin: 0;
     padding: 0;
+
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -211,6 +212,7 @@ form button:hover {
     max-width: 800px;
     margin: 20px auto;
     overflow: hidden;
+ 
 }
 
 .carousel {
@@ -296,6 +298,7 @@ form button:hover {
   .container{
     width: 50%;
     animation: popUp 1s ease-in;
+
     
   }
   
@@ -319,6 +322,14 @@ form button:hover {
         opacity: 1;
     }
   }
+  .list-inline-item.active a {
+    color: #808080;
+    font-weight: bold; /* Optional: Add if you want to make the text bold */
+}
+.list-inline-item a:hover {
+    color: #808080; /* Gray color */
+
+}
 
 
 
